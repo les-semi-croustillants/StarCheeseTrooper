@@ -1,0 +1,512 @@
+\hypertarget{_terrain_8h}{\section{/home/enzo/projet\-\_\-fluide/src/\-Terrain.h File Reference}
+\label{_terrain_8h}\index{/home/enzo/projet\-\_\-fluide/src/\-Terrain.\-h@{/home/enzo/projet\-\_\-fluide/src/\-Terrain.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L\-\_\-image.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L.\-h$>$}\\*
+Include dependency graph for Terrain.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_terrain_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_terrain_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_fantome}{Fantome}
+\begin{DoxyCompactList}\small\item\em Module image. \end{DoxyCompactList}\item 
+struct \hyperlink{struct___salle}{\-\_\-\-Salle}
+\item 
+struct \hyperlink{struct_terrain}{Terrain}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct___salle}{\-\_\-\-Salle} \hyperlink{_terrain_8h_a00ea6820934a8f863026cfbfad337db8}{Salle}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_terrain_8h_a6d08249ac03deb3b724cfe24bfcd199d}{ter\-Init} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em ter\-Init initialise le terrain \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a6b1c85f63f3b514768066b3b444d81c7}{init\-Fant} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em init\-Fant initialise les ennemis \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a33d953593dec7f7101c0e92aeca4f00e}{ter\-Libere} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em libere le terrain \end{DoxyCompactList}\item 
+int \hyperlink{_terrain_8h_a6ee954227217040c6cc35090d4e97748}{ter\-Est\-Position\-Perso\-Valide} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int)
+\begin{DoxyCompactList}\small\item\em ter\-Est\-Pos\-Perso\-Valide regarde si la position d'une entite est conforme au décors \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a145b4f97bb6bda560fca5c014a35934d}{ter\-Actuel\-Initdroite} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de droite \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_abfe20b802508190569c1afa5bbc30d96}{ter\-Actuel\-Initgauche} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de gauche \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a835e5cd3a1db0bfae2dc653fb8d76fc1}{ter\-Actuel\-Inithaut} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de haut \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a0803f6751f40cade7a296f1c54d0946e}{ter\-Actuel\-Initbas} (\hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de bas \end{DoxyCompactList}\item 
+int \hyperlink{_terrain_8h_a7ff92302aa6d2fcd0b10639d450b23aa}{Marqueur\-Present} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int)
+\begin{DoxyCompactList}\small\item\em Marqueur\-Present regarde si il y a un marqueur dans une case precise du tableau si oui, les enemis ne pas peuvent passer. \end{DoxyCompactList}\item 
+const char \hyperlink{_terrain_8h_acdf315b17166803bb98fcad61d864267}{ter\-Get\-X\-Y} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int)
+\begin{DoxyCompactList}\small\item\em donne le contenu de la case xy \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a0fc64883b093bd186d9b3619e483a454}{ter\-Set\-X\-Y} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int, const char)
+\begin{DoxyCompactList}\small\item\em change le contenu de la case xy \end{DoxyCompactList}\item 
+const int \hyperlink{_terrain_8h_ab2a4c597cc893ff2c7c1b6193f722398}{get\-Dim\-X} (const \hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em donne la taille du terrain \end{DoxyCompactList}\item 
+const int \hyperlink{_terrain_8h_a78e20dd48fe85faf3d2c5d20981b17d1}{get\-Dim\-Y} (const \hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em donne la taille du terrain \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_a7ca257e9f8be253422eeff398ed1153a}{perso\-Proche\-Rat} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int)
+\begin{DoxyCompactList}\small\item\em regarde si le personnage est proche des ennemis \end{DoxyCompactList}\item 
+void \hyperlink{_terrain_8h_acb53f00b7ac91cca4fcd22d5be6d58b8}{mode\-Agro} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int, const int)
+\begin{DoxyCompactList}\small\item\em fait en sorte que les ennemis attaquent le personnage \end{DoxyCompactList}\item 
+const int \hyperlink{_terrain_8h_af5d683f812d1747c4833083ead28c7e5}{getnbfant} (const \hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em regarde le nombre d'ennemis dans une salle \end{DoxyCompactList}\item 
+int \hyperlink{_terrain_8h_a9501a8043ac3eb836e4a5da1b8119c07}{ter\-Est\-Position\-Perso\-Pic} (const \hyperlink{struct_terrain}{Terrain} $\ast$, const int, const int)
+\begin{DoxyCompactList}\small\item\em regarde si le personnage marche sur un pique \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_terrain_8h_a00ea6820934a8f863026cfbfad337db8}{\index{Terrain.\-h@{Terrain.\-h}!Salle@{Salle}}
+\index{Salle@{Salle}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{Salle}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Salle}  {\bf Salle}}}\label{_terrain_8h_a00ea6820934a8f863026cfbfad337db8}
+
+
+\subsection{Function Documentation}
+\hypertarget{_terrain_8h_ab2a4c597cc893ff2c7c1b6193f722398}{\index{Terrain.\-h@{Terrain.\-h}!get\-Dim\-X@{get\-Dim\-X}}
+\index{get\-Dim\-X@{get\-Dim\-X}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{get\-Dim\-X}]{\setlength{\rightskip}{0pt plus 5cm}const int get\-Dim\-X (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_ab2a4c597cc893ff2c7c1b6193f722398}
+
+
+donne la taille du terrain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 545 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a78e20dd48fe85faf3d2c5d20981b17d1}{\index{Terrain.\-h@{Terrain.\-h}!get\-Dim\-Y@{get\-Dim\-Y}}
+\index{get\-Dim\-Y@{get\-Dim\-Y}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{get\-Dim\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int get\-Dim\-Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a78e20dd48fe85faf3d2c5d20981b17d1}
+
+
+donne la taille du terrain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 550 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_af5d683f812d1747c4833083ead28c7e5}{\index{Terrain.\-h@{Terrain.\-h}!getnbfant@{getnbfant}}
+\index{getnbfant@{getnbfant}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{getnbfant}]{\setlength{\rightskip}{0pt plus 5cm}const int getnbfant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_af5d683f812d1747c4833083ead28c7e5}
+
+
+regarde le nombre d'ennemis dans une salle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 555 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a6b1c85f63f3b514768066b3b444d81c7}{\index{Terrain.\-h@{Terrain.\-h}!init\-Fant@{init\-Fant}}
+\index{init\-Fant@{init\-Fant}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{init\-Fant}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Fant (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a6b1c85f63f3b514768066b3b444d81c7}
+
+
+init\-Fant initialise les ennemis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 310 of file Terrain.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{_terrain_8h_a6b1c85f63f3b514768066b3b444d81c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_terrain_8h_a7ff92302aa6d2fcd0b10639d450b23aa}{\index{Terrain.\-h@{Terrain.\-h}!Marqueur\-Present@{Marqueur\-Present}}
+\index{Marqueur\-Present@{Marqueur\-Present}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{Marqueur\-Present}]{\setlength{\rightskip}{0pt plus 5cm}int Marqueur\-Present (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a7ff92302aa6d2fcd0b10639d450b23aa}
+
+
+Marqueur\-Present regarde si il y a un marqueur dans une case precise du tableau si oui, les enemis ne pas peuvent passer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+{\em int} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 511 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_acb53f00b7ac91cca4fcd22d5be6d58b8}{\index{Terrain.\-h@{Terrain.\-h}!mode\-Agro@{mode\-Agro}}
+\index{mode\-Agro@{mode\-Agro}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{mode\-Agro}]{\setlength{\rightskip}{0pt plus 5cm}void mode\-Agro (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{, }
+\item[{const int}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_acb53f00b7ac91cca4fcd22d5be6d58b8}
+
+
+fait en sorte que les ennemis attaquent le personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+{\em int} & \\
+\hline
+{\em int} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 486 of file Terrain.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_terrain_8h_acb53f00b7ac91cca4fcd22d5be6d58b8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_terrain_8h_a7ca257e9f8be253422eeff398ed1153a}{\index{Terrain.\-h@{Terrain.\-h}!perso\-Proche\-Rat@{perso\-Proche\-Rat}}
+\index{perso\-Proche\-Rat@{perso\-Proche\-Rat}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{perso\-Proche\-Rat}]{\setlength{\rightskip}{0pt plus 5cm}void perso\-Proche\-Rat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a7ca257e9f8be253422eeff398ed1153a}
+
+
+regarde si le personnage est proche des ennemis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+{\em int} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 464 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a0803f6751f40cade7a296f1c54d0946e}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Actuel\-Initbas@{ter\-Actuel\-Initbas}}
+\index{ter\-Actuel\-Initbas@{ter\-Actuel\-Initbas}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Actuel\-Initbas}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Actuel\-Initbas (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a0803f6751f40cade7a296f1c54d0946e}
+
+
+ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de bas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 393 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a145b4f97bb6bda560fca5c014a35934d}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Actuel\-Initdroite@{ter\-Actuel\-Initdroite}}
+\index{ter\-Actuel\-Initdroite@{ter\-Actuel\-Initdroite}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Actuel\-Initdroite}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Actuel\-Initdroite (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a145b4f97bb6bda560fca5c014a35934d}
+
+
+ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de droite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 336 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_abfe20b802508190569c1afa5bbc30d96}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Actuel\-Initgauche@{ter\-Actuel\-Initgauche}}
+\index{ter\-Actuel\-Initgauche@{ter\-Actuel\-Initgauche}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Actuel\-Initgauche}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Actuel\-Initgauche (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_abfe20b802508190569c1afa5bbc30d96}
+
+
+ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 356 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a835e5cd3a1db0bfae2dc653fb8d76fc1}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Actuel\-Inithaut@{ter\-Actuel\-Inithaut}}
+\index{ter\-Actuel\-Inithaut@{ter\-Actuel\-Inithaut}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Actuel\-Inithaut}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Actuel\-Inithaut (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a835e5cd3a1db0bfae2dc653fb8d76fc1}
+
+
+ter\-Actuel\-Initdroite actualise le terrain si le personage est passe pas la porte de haut 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 374 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a9501a8043ac3eb836e4a5da1b8119c07}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Est\-Position\-Perso\-Pic@{ter\-Est\-Position\-Perso\-Pic}}
+\index{ter\-Est\-Position\-Perso\-Pic@{ter\-Est\-Position\-Perso\-Pic}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Est\-Position\-Perso\-Pic}]{\setlength{\rightskip}{0pt plus 5cm}int ter\-Est\-Position\-Perso\-Pic (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a9501a8043ac3eb836e4a5da1b8119c07}
+
+
+regarde si le personnage marche sur un pique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Terrain$\ast$} & \\
+\hline
+{\em const} & int \\
+\hline
+{\em const} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 448 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a6ee954227217040c6cc35090d4e97748}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Est\-Position\-Perso\-Valide@{ter\-Est\-Position\-Perso\-Valide}}
+\index{ter\-Est\-Position\-Perso\-Valide@{ter\-Est\-Position\-Perso\-Valide}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Est\-Position\-Perso\-Valide}]{\setlength{\rightskip}{0pt plus 5cm}int ter\-Est\-Position\-Perso\-Valide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a6ee954227217040c6cc35090d4e97748}
+
+
+ter\-Est\-Pos\-Perso\-Valide regarde si la position d'une entite est conforme au décors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+{\em int} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 440 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_acdf315b17166803bb98fcad61d864267}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Get\-X\-Y@{ter\-Get\-X\-Y}}
+\index{ter\-Get\-X\-Y@{ter\-Get\-X\-Y}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Get\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const char ter\-Get\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_acdf315b17166803bb98fcad61d864267}
+
+
+donne le contenu de la case xy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+{\em int} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 527 of file Terrain.\-c.
+
+\hypertarget{_terrain_8h_a6d08249ac03deb3b724cfe24bfcd199d}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Init@{ter\-Init}}
+\index{ter\-Init@{ter\-Init}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a6d08249ac03deb3b724cfe24bfcd199d}
+
+
+ter\-Init initialise le terrain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Terrain.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{_terrain_8h_a6d08249ac03deb3b724cfe24bfcd199d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_terrain_8h_a33d953593dec7f7101c0e92aeca4f00e}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Libere@{ter\-Libere}}
+\index{ter\-Libere@{ter\-Libere}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Libere}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Libere (
+\begin{DoxyParamCaption}
+\item[{{\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a33d953593dec7f7101c0e92aeca4f00e}
+
+
+libere le terrain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 422 of file Terrain.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{_terrain_8h_a33d953593dec7f7101c0e92aeca4f00e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_terrain_8h_a0fc64883b093bd186d9b3619e483a454}{\index{Terrain.\-h@{Terrain.\-h}!ter\-Set\-X\-Y@{ter\-Set\-X\-Y}}
+\index{ter\-Set\-X\-Y@{ter\-Set\-X\-Y}!Terrain.h@{Terrain.\-h}}
+\subsubsection[{ter\-Set\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void ter\-Set\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf Terrain} $\ast$}]{, }
+\item[{const int}]{, }
+\item[{const int}]{, }
+\item[{const char}]{}
+\end{DoxyParamCaption}
+)}}\label{_terrain_8h_a0fc64883b093bd186d9b3619e483a454}
+
+
+change le contenu de la case xy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_terrain}{Terrain}} & $\ast$ \\
+\hline
+{\em int} & \\
+\hline
+{\em char} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 536 of file Terrain.\-c.
+

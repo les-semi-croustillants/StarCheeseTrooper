@@ -1,0 +1,13 @@
+<map id="jeuActionClavier" name="jeuActionClavier">
+<area shape="rect" id="node2" href="$_fromage_8c.html#a1b01ae253751f07cae61840adada464c" title="le personnage vas vers la gauche " alt="" coords="172,5,265,32"/>
+<area shape="rect" id="node4" href="$_fromage_8c.html#a7a9d7a9f21a8a8416994073ea5b5d0db" title="le personnage vas vers la droite " alt="" coords="177,56,260,83"/>
+<area shape="rect" id="node5" href="$_fromage_8c.html#a5863a40a7e9e51a065af35d0efeeb7ee" title="fromHaut" alt="" coords="181,107,257,133"/>
+<area shape="rect" id="node6" href="$_fromage_8c.html#a6b65f6ef20e9b627bf6c3ce5044bcb3a" title="le personnage vas vers le bas " alt="" coords="183,157,254,184"/>
+<area shape="rect" id="node7" href="$_fromage_8c.html#a415d063435745d17fffbd85768a98745" title="fromDiagDB" alt="" coords="171,208,266,235"/>
+<area shape="rect" id="node8" href="$_fromage_8c.html#a0421477017fd29fa3ec280a5ad3b8636" title="fromDiagDH" alt="" coords="171,259,266,285"/>
+<area shape="rect" id="node9" href="$_fromage_8c.html#a365ad04b0043379b598c870904130f83" title="fromDiagGB" alt="" coords="171,309,266,336"/>
+<area shape="rect" id="node10" href="$_fromage_8c.html#afe3587533c99fc07fa05e4bd3b698e2d" title="fromDiagGH" alt="" coords="171,360,266,387"/>
+<area shape="rect" id="node11" href="$_jeu_8c.html#a29bc8c099ab4b59464ab31a6f44a6465" title="initProjo initialise un nouveau projectile en fonction de l&#39;orientation du personnage ..." alt="" coords="184,411,253,437"/>
+<area shape="rect" id="node3" href="$_terrain_8c.html#a5a60ae0eec54d0765a5c50a5e91181d5" title="terEstPosPersoValide regarde si la position d&#39;une entite est conforme au décors " alt="" coords="315,183,490,209"/>
+<area shape="rect" id="node12" href="$_jeu_8c.html#a3389c806f79c54e7a4150967f604c7f7" title="ajouterElementTabDyn ajoute un element a la fin du tableau dynamique " alt="" coords="325,411,480,437"/>
+</map>

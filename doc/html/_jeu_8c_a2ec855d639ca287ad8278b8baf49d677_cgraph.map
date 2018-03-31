@@ -1,0 +1,6 @@
+<map id="jeuLibere" name="jeuLibere">
+<area shape="rect" id="node2" href="$_terrain_8c.html#ac4ec9eb0a375fb3b0d9da191f4af5809" title="libere le terrain " alt="" coords="156,5,228,32"/>
+<area shape="rect" id="node4" href="$_jeu_8c.html#a23c700cab62fac5e751c347b9248dc18" title="testamentTabDyn vide et libère un tableau dynamique " alt="" coords="129,56,255,83"/>
+<area shape="rect" id="node3" href="$_terrain_8c.html#a65f656bd303453c5fadac03ae22ec70b" title="vider" alt="" coords="365,5,416,32"/>
+<area shape="rect" id="node5" href="$_jeu_8c.html#a0d10365670f81c1e95814816e88ddcbf" title="supprimerElementTabDyn supprimme un element a la ieme position dans le tableau dynamique ..." alt="" coords="304,56,477,83"/>
+</map>

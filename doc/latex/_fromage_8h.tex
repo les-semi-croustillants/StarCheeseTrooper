@@ -1,0 +1,251 @@
+\hypertarget{_fromage_8h}{\section{/home/enzo/projet\-\_\-fluide/src/\-Fromage.h File Reference}
+\label{_fromage_8h}\index{/home/enzo/projet\-\_\-fluide/src/\-Fromage.\-h@{/home/enzo/projet\-\_\-fluide/src/\-Fromage.\-h}}
+}
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L.\-h$>$}\\*
+{\ttfamily \#include $<$S\-D\-L/\-S\-D\-L\-\_\-image.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Terrain.\-h\char`\"{}}\\*
+Include dependency graph for Fromage.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_fromage_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_fromage_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_fromage}{Fromage}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_fromage_8h_a3a464aadf40553039f34259b6d29705e}{from\-Init} (\hyperlink{struct_fromage}{Fromage} $\ast$)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées de bases et autres variable de notre personnage. \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8h_a28417ee81d3c713a73afbdba0473f02a}{from\-Gauche} (\hyperlink{struct_fromage}{Fromage} $\ast$, const \hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em le personnage vas vers la gauche \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8h_a0133c0a17541f03d916e74757482fc15}{from\-Droite} (\hyperlink{struct_fromage}{Fromage} $\ast$, const \hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em le personnage vas vers la droite \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8h_a9d613055bca68909ec3ab656e7365e75}{from\-Bas} (\hyperlink{struct_fromage}{Fromage} $\ast$, const \hyperlink{struct_terrain}{Terrain} $\ast$)
+\begin{DoxyCompactList}\small\item\em le personnage vas vers le bas \end{DoxyCompactList}\item 
+int \hyperlink{_fromage_8h_a0c17bfd9318ebd9c0a14c552c47b5cda}{from\-Get\-X} (const \hyperlink{struct_fromage}{Fromage} $\ast$)
+\begin{DoxyCompactList}\small\item\em donne la position en x du perso \end{DoxyCompactList}\item 
+int \hyperlink{_fromage_8h_ad6517a50346a66540015abfb037750ef}{from\-Get\-Y} (const \hyperlink{struct_fromage}{Fromage} $\ast$)
+\begin{DoxyCompactList}\small\item\em donne la position en y du perso \end{DoxyCompactList}\item 
+int \hyperlink{_fromage_8h_ac3d77de3eb25604ecb152dc234c1b16d}{from\-Gethp} (const \hyperlink{struct_fromage}{Fromage} $\ast$)
+\begin{DoxyCompactList}\small\item\em donne les point de vie du perso \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8h_a1fed9a641a1f86497909ac80d35fe785}{from\-Sethp} (int, \hyperlink{struct_fromage}{Fromage} $\ast$)
+\begin{DoxyCompactList}\small\item\em change les point de vie du perso \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_fromage_8h_a9d613055bca68909ec3ab656e7365e75}{\index{Fromage.\-h@{Fromage.\-h}!from\-Bas@{from\-Bas}}
+\index{from\-Bas@{from\-Bas}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Bas}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Bas (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{, }
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_a9d613055bca68909ec3ab656e7365e75}
+
+
+le personnage vas vers le bas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+{\em const} & \hyperlink{struct_terrain}{Terrain} $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_fromage_8h_a9d613055bca68909ec3ab656e7365e75_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8h_a0133c0a17541f03d916e74757482fc15}{\index{Fromage.\-h@{Fromage.\-h}!from\-Droite@{from\-Droite}}
+\index{from\-Droite@{from\-Droite}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Droite}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Droite (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{, }
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_a0133c0a17541f03d916e74757482fc15}
+
+
+le personnage vas vers la droite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+{\em const} & \hyperlink{struct_terrain}{Terrain} $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_fromage_8h_a0133c0a17541f03d916e74757482fc15_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8h_a28417ee81d3c713a73afbdba0473f02a}{\index{Fromage.\-h@{Fromage.\-h}!from\-Gauche@{from\-Gauche}}
+\index{from\-Gauche@{from\-Gauche}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Gauche}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Gauche (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{, }
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_a28417ee81d3c713a73afbdba0473f02a}
+
+
+le personnage vas vers la gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+{\em const} & \hyperlink{struct_terrain}{Terrain} $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{_fromage_8h_a28417ee81d3c713a73afbdba0473f02a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8h_ac3d77de3eb25604ecb152dc234c1b16d}{\index{Fromage.\-h@{Fromage.\-h}!from\-Gethp@{from\-Gethp}}
+\index{from\-Gethp@{from\-Gethp}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Gethp}]{\setlength{\rightskip}{0pt plus 5cm}int from\-Gethp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_ac3d77de3eb25604ecb152dc234c1b16d}
+
+
+donne les point de vie du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Fromage.\-c.
+
+\hypertarget{_fromage_8h_a0c17bfd9318ebd9c0a14c552c47b5cda}{\index{Fromage.\-h@{Fromage.\-h}!from\-Get\-X@{from\-Get\-X}}
+\index{from\-Get\-X@{from\-Get\-X}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int from\-Get\-X (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_a0c17bfd9318ebd9c0a14c552c47b5cda}
+
+
+donne la position en x du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Fromage.\-c.
+
+\hypertarget{_fromage_8h_ad6517a50346a66540015abfb037750ef}{\index{Fromage.\-h@{Fromage.\-h}!from\-Get\-Y@{from\-Get\-Y}}
+\index{from\-Get\-Y@{from\-Get\-Y}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int from\-Get\-Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_ad6517a50346a66540015abfb037750ef}
+
+
+donne la position en y du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file Fromage.\-c.
+
+\hypertarget{_fromage_8h_a3a464aadf40553039f34259b6d29705e}{\index{Fromage.\-h@{Fromage.\-h}!from\-Init@{from\-Init}}
+\index{from\-Init@{from\-Init}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_a3a464aadf40553039f34259b6d29705e}
+
+
+Initialise les coordonnées de bases et autres variable de notre personnage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Fromage.\-c.
+
+\hypertarget{_fromage_8h_a1fed9a641a1f86497909ac80d35fe785}{\index{Fromage.\-h@{Fromage.\-h}!from\-Sethp@{from\-Sethp}}
+\index{from\-Sethp@{from\-Sethp}!Fromage.h@{Fromage.\-h}}
+\subsubsection[{from\-Sethp}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Sethp (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8h_a1fed9a641a1f86497909ac80d35fe785}
+
+
+change les point de vie du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Fromage.\-c.
+

@@ -1,0 +1,12 @@
+<map id="sdljeuInit" name="sdljeuInit">
+<area shape="rect" id="node2" href="$_jeu_8c.html#adea2de1f9bb9c58341d64db6e20261cc" title="jeuInit" alt="" coords="175,56,233,83"/>
+<area shape="rect" id="node8" href="$_terrain_8c.html#a894e796af5dd61fa8e8879d74c4c197b" title="donne la taille du terrain " alt="" coords="167,107,241,133"/>
+<area shape="rect" id="node9" href="$_jeu_8c.html#a2cbfcfb9733316dbc407c8a421285447" title="jeuGetConstTerrainPtr" alt="" coords="128,157,280,184"/>
+<area shape="rect" id="node10" href="$_terrain_8c.html#af3b892a93ee78d81a03111d8b00231fe" title="donne la taille du terrain " alt="" coords="167,208,241,235"/>
+<area shape="rect" id="node11" href="$sdl_jeu_8c.html#aaf9c7736cab0f3cecd284f5fdb0b1683" title="SDL_load_image" alt="" coords="143,259,265,285"/>
+<area shape="rect" id="node3" href="$_fromage_8c.html#a0ab0915ae62ade36bec9bba192c34614" title="Initialise les coordonnées de bases et autres variable de notre personnage. " alt="" coords="355,5,421,32"/>
+<area shape="rect" id="node4" href="$_terrain_8c.html#a44312d3c7ca6ef4573d206043149fc1f" title="terInit initialise le terrain " alt="" coords="361,56,415,83"/>
+<area shape="rect" id="node7" href="$_jeu_8c.html#a7518cb6d43b8202ba9a00bfe99fc3276" title="initialiserTabDyn initialise un tableau dynamique " alt="" coords="329,107,447,133"/>
+<area shape="rect" id="node5" href="$_terrain_8c.html#aa8121b2fc06d3aa777c8303f0f36317d" title="creerTabFich" alt="" coords="535,31,633,57"/>
+<area shape="rect" id="node6" href="$_terrain_8c.html#a5a60ae0eec54d0765a5c50a5e91181d5" title="terEstPosPersoValide regarde si la position d&#39;une entite est conforme au décors " alt="" coords="497,81,671,108"/>
+</map>

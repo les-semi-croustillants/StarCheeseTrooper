@@ -1,0 +1,712 @@
+\hypertarget{_jeu_8c}{\section{/home/enzo/projet\-\_\-fluide/src/\-Jeu.c File Reference}
+\label{_jeu_8c}\index{/home/enzo/projet\-\_\-fluide/src/\-Jeu.\-c@{/home/enzo/projet\-\_\-fluide/src/\-Jeu.\-c}}
+}
+{\ttfamily \#include \char`\"{}Jeu.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$malloc.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+Include dependency graph for Jeu.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_jeu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_jeu_8c_acd0f9b88c35112b35f67d3cde4b2365c}{H\-A\-U\-T}~0
+\item 
+\#define \hyperlink{_jeu_8c_af625d3f3bc022848a558f2b18def5b15}{D\-R\-O\-I\-T\-E}~1
+\item 
+\#define \hyperlink{_jeu_8c_abd7bcdd3b14eec4414469f88f2bd8f12}{B\-A\-S}~2
+\item 
+\#define \hyperlink{_jeu_8c_af07f8bf974fdf76afd17f2b97ac15a22}{G\-A\-U\-C\-H\-E}~3
+\item 
+\#define \hyperlink{_jeu_8c_a7dcae438e7824a23ed30d2139c1eff89}{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}~4
+\item 
+\#define \hyperlink{_jeu_8c_a4104d8bac5f71c40e72de6aa5080e853}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}~5
+\item 
+\#define \hyperlink{_jeu_8c_a17b219a9666ba50f527efe5fecf9de4c}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}~6
+\item 
+\#define \hyperlink{_jeu_8c_a0439327d50e1021a81cff4d7dce7ac12}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}~7
+\item 
+\#define \hyperlink{_jeu_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}~8
+\item 
+\#define \hyperlink{_jeu_8c_a39bc6ce729110249c344aaff8ff6a0dc}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B}~9
+\item 
+\#define \hyperlink{_jeu_8c_a76d11649f0994a3577d1a62424a40306}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H}~10
+\item 
+\#define \hyperlink{_jeu_8c_a2d8442ac2899f514c940ed8cf5b74ae8}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B}~11
+\item 
+\#define \hyperlink{_jeu_8c_a63fbf81f2bfe7ccd613b9a9d8e43352c}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H}~12
+\item 
+\#define \hyperlink{_jeu_8c_a2484b01dd58573754311f24affa38005}{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}~13
+\item 
+\#define \hyperlink{_jeu_8c_abd6253e86e781ad5fc9a74bf450bacc7}{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}~14
+\item 
+\#define \hyperlink{_jeu_8c_a75f7acf2f21db3834069859b801c7e32}{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S}~15
+\item 
+\#define \hyperlink{_jeu_8c_a2fa60451bc6ed1cefead0b514a40c674}{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}~16
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_jeu_8c_adea2de1f9bb9c58341d64db6e20261cc}{jeu\-Init} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+void \hyperlink{_jeu_8c_a2ec855d639ca287ad8278b8baf49d677}{jeu\-Libere} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+\hyperlink{struct_terrain}{Terrain} $\ast$ \hyperlink{_jeu_8c_ae748f3f14e09a2f4b556545cef926394}{jeu\-Get\-Terrain\-Ptr} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+\hyperlink{struct_fromage}{Fromage} $\ast$ \hyperlink{_jeu_8c_a62edb593072d6c43ba1b9362f0240058}{jeu\-Get\-Fromage\-Ptr} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+const \hyperlink{struct_terrain}{Terrain} $\ast$ \hyperlink{_jeu_8c_a2cbfcfb9733316dbc407c8a421285447}{jeu\-Get\-Const\-Terrain\-Ptr} (const \hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+const \hyperlink{struct_fromage}{Fromage} $\ast$ \hyperlink{_jeu_8c_a2e878ce030a0a52788c7ee9ac2daeb55}{jeu\-Get\-Const\-Fromage\-Ptr} (const \hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+void \hyperlink{_jeu_8c_a59334844989c7fb2edb6fbc3df80fe8b}{jeu\-Action\-Clavier} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu, int touche)
+\item 
+void \hyperlink{_jeu_8c_a29bc8c099ab4b59464ab31a6f44a6465}{init\-Projo} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\begin{DoxyCompactList}\small\item\em init\-Projo initialise un nouveau projectile en fonction de l'orientation du personnage \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_a3c934fb69c2ca92e5e1f37dffac31df6}{init\-Projo\-Rat} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu, int i)
+\item 
+void \hyperlink{_jeu_8c_a240e0a28446174a8ad0924c539e29c66}{init\-Projohp} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu, int i)
+\item 
+void \hyperlink{_jeu_8c_a0cf2f8d638bfab400e2c1b0103d87b62}{init\-Projoclef} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+void \hyperlink{_jeu_8c_ad4612e76a9c8e5ecc0a4b70380b04a31}{deplacer\-Projo} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu, int i)
+\begin{DoxyCompactList}\small\item\em deplacer\-Projo deplace le projectile \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_a92a6f56229e6e3bf17c627b9702b853d}{perso\-Prochehp} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+void \hyperlink{_jeu_8c_a52e4338b8a1c8e22017d66b9cad2af98}{perso\-Procheclef} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+void \hyperlink{_jeu_8c_a352bd60c0d6e3d2d0293fde191b26b21}{jeu\-Evolue} (\hyperlink{struct_jeu}{Jeu} $\ast$p\-Jeu)
+\item 
+void \hyperlink{_jeu_8c_a7f2a12a2ec873faa1a9798eb81f40b0c}{affiche\-Element\-T\-D} (\hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e)
+\item 
+void \hyperlink{_jeu_8c_a7518cb6d43b8202ba9a00bfe99fc3276}{initialiser\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em initialiser\-Tab\-Dyn initialise un tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_a23c700cab62fac5e751c347b9248dc18}{testament\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em testament\-Tab\-Dyn vide et libère un tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_a3389c806f79c54e7a4150967f604c7f7}{ajouter\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e)
+\begin{DoxyCompactList}\small\item\em ajouter\-Element\-Tab\-Dyn ajoute un element a la fin du tableau dynamique \end{DoxyCompactList}\item 
+\hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} \hyperlink{_jeu_8c_a8801ebbe316e3da8e164162fa410466c}{valeur\-Ieme\-Element\-Tab\-Dyn} (const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, unsigned int i)
+\begin{DoxyCompactList}\small\item\em valeur\-Ieme\-Element\-Tab\-Dyn renvoie l'ieme element d'un tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_afd5a3bf829dfce68d6ee92c86bfe4a3c}{afficher\-Tab\-Dyn} (const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em afficher\-Tab\-Dyn affiche les elements du tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_a0d10365670f81c1e95814816e88ddcbf}{supprimer\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, int position)
+\begin{DoxyCompactList}\small\item\em supprimer\-Element\-Tab\-Dyn supprimme un element a la ieme position dans le tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8c_af54396488f24cbc0ea4c772b0a833be7}{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e, unsigned int i)
+\begin{DoxyCompactList}\small\item\em modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn modifie l'ieme element du tableau dynamique par celui passer en parametre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_jeu_8c_a7dcae438e7824a23ed30d2139c1eff89}{\index{Jeu.\-c@{Jeu.\-c}!A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N~4}}\label{_jeu_8c_a7dcae438e7824a23ed30d2139c1eff89}
+
+
+Definition at line 10 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_abd7bcdd3b14eec4414469f88f2bd8f12}{\index{Jeu.\-c@{Jeu.\-c}!B\-A\-S@{B\-A\-S}}
+\index{B\-A\-S@{B\-A\-S}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-A\-S~2}}\label{_jeu_8c_abd7bcdd3b14eec4414469f88f2bd8f12}
+
+
+Definition at line 7 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a0439327d50e1021a81cff4d7dce7ac12}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S~7}}\label{_jeu_8c_a0439327d50e1021a81cff4d7dce7ac12}
+
+
+Definition at line 13 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a39bc6ce729110249c344aaff8ff6a0dc}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-B~9}}\label{_jeu_8c_a39bc6ce729110249c344aaff8ff6a0dc}
+
+
+Definition at line 15 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a76d11649f0994a3577d1a62424a40306}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-D\-H~10}}\label{_jeu_8c_a76d11649f0994a3577d1a62424a40306}
+
+
+Definition at line 16 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a2d8442ac2899f514c940ed8cf5b74ae8}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-B~11}}\label{_jeu_8c_a2d8442ac2899f514c940ed8cf5b74ae8}
+
+
+Definition at line 17 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a63fbf81f2bfe7ccd613b9a9d8e43352c}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G\-\_\-\-G\-H~12}}\label{_jeu_8c_a63fbf81f2bfe7ccd613b9a9d8e43352c}
+
+
+Definition at line 18 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a17b219a9666ba50f527efe5fecf9de4c}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E~6}}\label{_jeu_8c_a17b219a9666ba50f527efe5fecf9de4c}
+
+
+Definition at line 12 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E~8}}\label{_jeu_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}
+
+
+Definition at line 14 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a4104d8bac5f71c40e72de6aa5080e853}{\index{Jeu.\-c@{Jeu.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T~5}}\label{_jeu_8c_a4104d8bac5f71c40e72de6aa5080e853}
+
+
+Definition at line 11 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_af625d3f3bc022848a558f2b18def5b15}{\index{Jeu.\-c@{Jeu.\-c}!D\-R\-O\-I\-T\-E@{D\-R\-O\-I\-T\-E}}
+\index{D\-R\-O\-I\-T\-E@{D\-R\-O\-I\-T\-E}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-O\-I\-T\-E~1}}\label{_jeu_8c_af625d3f3bc022848a558f2b18def5b15}
+
+
+Definition at line 6 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_af07f8bf974fdf76afd17f2b97ac15a22}{\index{Jeu.\-c@{Jeu.\-c}!G\-A\-U\-C\-H\-E@{G\-A\-U\-C\-H\-E}}
+\index{G\-A\-U\-C\-H\-E@{G\-A\-U\-C\-H\-E}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-A\-U\-C\-H\-E~3}}\label{_jeu_8c_af07f8bf974fdf76afd17f2b97ac15a22}
+
+
+Definition at line 8 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_acd0f9b88c35112b35f67d3cde4b2365c}{\index{Jeu.\-c@{Jeu.\-c}!H\-A\-U\-T@{H\-A\-U\-T}}
+\index{H\-A\-U\-T@{H\-A\-U\-T}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-A\-U\-T~0}}\label{_jeu_8c_acd0f9b88c35112b35f67d3cde4b2365c}
+
+
+Definition at line 5 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a75f7acf2f21db3834069859b801c7e32}{\index{Jeu.\-c@{Jeu.\-c}!O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S}}
+\index{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-B\-A\-S~15}}\label{_jeu_8c_a75f7acf2f21db3834069859b801c7e32}
+
+
+Definition at line 21 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a2484b01dd58573754311f24affa38005}{\index{Jeu.\-c@{Jeu.\-c}!O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}}
+\index{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E~13}}\label{_jeu_8c_a2484b01dd58573754311f24affa38005}
+
+
+Definition at line 19 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a2fa60451bc6ed1cefead0b514a40c674}{\index{Jeu.\-c@{Jeu.\-c}!O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}}
+\index{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E~16}}\label{_jeu_8c_a2fa60451bc6ed1cefead0b514a40c674}
+
+
+Definition at line 22 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_abd6253e86e781ad5fc9a74bf450bacc7}{\index{Jeu.\-c@{Jeu.\-c}!O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}}
+\index{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-R\-I\-E\-N\-T\-A\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T~14}}\label{_jeu_8c_abd6253e86e781ad5fc9a74bf450bacc7}
+
+
+Definition at line 20 of file Jeu.\-c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_jeu_8c_a7f2a12a2ec873faa1a9798eb81f40b0c}{\index{Jeu.\-c@{Jeu.\-c}!affiche\-Element\-T\-D@{affiche\-Element\-T\-D}}
+\index{affiche\-Element\-T\-D@{affiche\-Element\-T\-D}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{affiche\-Element\-T\-D}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\-Element\-T\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf Element\-T\-D}}]{e}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a7f2a12a2ec873faa1a9798eb81f40b0c}
+
+
+Definition at line 374 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_afd5a3bf829dfce68d6ee92c86bfe4a3c}{\index{Jeu.\-c@{Jeu.\-c}!afficher\-Tab\-Dyn@{afficher\-Tab\-Dyn}}
+\index{afficher\-Tab\-Dyn@{afficher\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{afficher\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_afd5a3bf829dfce68d6ee92c86bfe4a3c}
+
+
+afficher\-Tab\-Dyn affiche les elements du tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Tableau\-Dynamique $\ast$t \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 423 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_jeu_8c_afd5a3bf829dfce68d6ee92c86bfe4a3c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a3389c806f79c54e7a4150967f604c7f7}{\index{Jeu.\-c@{Jeu.\-c}!ajouter\-Element\-Tab\-Dyn@{ajouter\-Element\-Tab\-Dyn}}
+\index{ajouter\-Element\-Tab\-Dyn@{ajouter\-Element\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{ajouter\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void ajouter\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{{\bf Element\-T\-D}}]{e}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a3389c806f79c54e7a4150967f604c7f7}
+
+
+ajouter\-Element\-Tab\-Dyn ajoute un element a la fin du tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em Element\-T\-D} & e \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 396 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_ad4612e76a9c8e5ecc0a4b70380b04a31}{\index{Jeu.\-c@{Jeu.\-c}!deplacer\-Projo@{deplacer\-Projo}}
+\index{deplacer\-Projo@{deplacer\-Projo}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{deplacer\-Projo}]{\setlength{\rightskip}{0pt plus 5cm}void deplacer\-Projo (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_ad4612e76a9c8e5ecc0a4b70380b04a31}
+
+
+deplacer\-Projo deplace le projectile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Jeu$\ast$} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a7518cb6d43b8202ba9a00bfe99fc3276}{\index{Jeu.\-c@{Jeu.\-c}!initialiser\-Tab\-Dyn@{initialiser\-Tab\-Dyn}}
+\index{initialiser\-Tab\-Dyn@{initialiser\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{initialiser\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a7518cb6d43b8202ba9a00bfe99fc3276}
+
+
+initialiser\-Tab\-Dyn initialise un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$ t \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 379 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a29bc8c099ab4b59464ab31a6f44a6465}{\index{Jeu.\-c@{Jeu.\-c}!init\-Projo@{init\-Projo}}
+\index{init\-Projo@{init\-Projo}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{init\-Projo}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Projo (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a29bc8c099ab4b59464ab31a6f44a6465}
+
+
+init\-Projo initialise un nouveau projectile en fonction de l'orientation du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Jeu$\ast$} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{_jeu_8c_a29bc8c099ab4b59464ab31a6f44a6465_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a0cf2f8d638bfab400e2c1b0103d87b62}{\index{Jeu.\-c@{Jeu.\-c}!init\-Projoclef@{init\-Projoclef}}
+\index{init\-Projoclef@{init\-Projoclef}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{init\-Projoclef}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Projoclef (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a0cf2f8d638bfab400e2c1b0103d87b62}
+
+
+Definition at line 214 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{_jeu_8c_a0cf2f8d638bfab400e2c1b0103d87b62_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a240e0a28446174a8ad0924c539e29c66}{\index{Jeu.\-c@{Jeu.\-c}!init\-Projohp@{init\-Projohp}}
+\index{init\-Projohp@{init\-Projohp}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{init\-Projohp}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Projohp (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a240e0a28446174a8ad0924c539e29c66}
+
+
+Definition at line 204 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{_jeu_8c_a240e0a28446174a8ad0924c539e29c66_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a3c934fb69c2ca92e5e1f37dffac31df6}{\index{Jeu.\-c@{Jeu.\-c}!init\-Projo\-Rat@{init\-Projo\-Rat}}
+\index{init\-Projo\-Rat@{init\-Projo\-Rat}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{init\-Projo\-Rat}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Projo\-Rat (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a3c934fb69c2ca92e5e1f37dffac31df6}
+
+
+Definition at line 172 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{_jeu_8c_a3c934fb69c2ca92e5e1f37dffac31df6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a59334844989c7fb2edb6fbc3df80fe8b}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Action\-Clavier@{jeu\-Action\-Clavier}}
+\index{jeu\-Action\-Clavier@{jeu\-Action\-Clavier}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Action\-Clavier}]{\setlength{\rightskip}{0pt plus 5cm}void jeu\-Action\-Clavier (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu, }
+\item[{int}]{touche}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a59334844989c7fb2edb6fbc3df80fe8b}
+
+
+Definition at line 68 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_jeu_8c_a59334844989c7fb2edb6fbc3df80fe8b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a352bd60c0d6e3d2d0293fde191b26b21}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Evolue@{jeu\-Evolue}}
+\index{jeu\-Evolue@{jeu\-Evolue}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Evolue}]{\setlength{\rightskip}{0pt plus 5cm}void jeu\-Evolue (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a352bd60c0d6e3d2d0293fde191b26b21}
+
+
+Definition at line 265 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{_jeu_8c_a352bd60c0d6e3d2d0293fde191b26b21_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a2e878ce030a0a52788c7ee9ac2daeb55}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Get\-Const\-Fromage\-Ptr@{jeu\-Get\-Const\-Fromage\-Ptr}}
+\index{jeu\-Get\-Const\-Fromage\-Ptr@{jeu\-Get\-Const\-Fromage\-Ptr}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Get\-Const\-Fromage\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Fromage}$\ast$ jeu\-Get\-Const\-Fromage\-Ptr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a2e878ce030a0a52788c7ee9ac2daeb55}
+
+
+Definition at line 54 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a2cbfcfb9733316dbc407c8a421285447}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Get\-Const\-Terrain\-Ptr@{jeu\-Get\-Const\-Terrain\-Ptr}}
+\index{jeu\-Get\-Const\-Terrain\-Ptr@{jeu\-Get\-Const\-Terrain\-Ptr}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Get\-Const\-Terrain\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Terrain}$\ast$ jeu\-Get\-Const\-Terrain\-Ptr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a2cbfcfb9733316dbc407c8a421285447}
+
+
+Definition at line 49 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a62edb593072d6c43ba1b9362f0240058}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Get\-Fromage\-Ptr@{jeu\-Get\-Fromage\-Ptr}}
+\index{jeu\-Get\-Fromage\-Ptr@{jeu\-Get\-Fromage\-Ptr}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Get\-Fromage\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fromage}$\ast$ jeu\-Get\-Fromage\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a62edb593072d6c43ba1b9362f0240058}
+
+
+Definition at line 44 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_ae748f3f14e09a2f4b556545cef926394}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Get\-Terrain\-Ptr@{jeu\-Get\-Terrain\-Ptr}}
+\index{jeu\-Get\-Terrain\-Ptr@{jeu\-Get\-Terrain\-Ptr}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Get\-Terrain\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Terrain}$\ast$ jeu\-Get\-Terrain\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_ae748f3f14e09a2f4b556545cef926394}
+
+
+Definition at line 39 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_adea2de1f9bb9c58341d64db6e20261cc}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Init@{jeu\-Init}}
+\index{jeu\-Init@{jeu\-Init}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void jeu\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_adea2de1f9bb9c58341d64db6e20261cc}
+
+
+Definition at line 24 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_jeu_8c_adea2de1f9bb9c58341d64db6e20261cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a2ec855d639ca287ad8278b8baf49d677}{\index{Jeu.\-c@{Jeu.\-c}!jeu\-Libere@{jeu\-Libere}}
+\index{jeu\-Libere@{jeu\-Libere}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{jeu\-Libere}]{\setlength{\rightskip}{0pt plus 5cm}void jeu\-Libere (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a2ec855d639ca287ad8278b8baf49d677}
+
+
+Definition at line 32 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_jeu_8c_a2ec855d639ca287ad8278b8baf49d677_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_af54396488f24cbc0ea4c772b0a833be7}{\index{Jeu.\-c@{Jeu.\-c}!modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn@{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn}}
+\index{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn@{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{{\bf Element\-T\-D}}]{e, }
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_af54396488f24cbc0ea4c772b0a833be7}
+
+
+modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn modifie l'ieme element du tableau dynamique par celui passer en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em Element\-T\-D} & e \\
+\hline
+{\em unsigned} & int i \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 464 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a52e4338b8a1c8e22017d66b9cad2af98}{\index{Jeu.\-c@{Jeu.\-c}!perso\-Procheclef@{perso\-Procheclef}}
+\index{perso\-Procheclef@{perso\-Procheclef}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{perso\-Procheclef}]{\setlength{\rightskip}{0pt plus 5cm}void perso\-Procheclef (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a52e4338b8a1c8e22017d66b9cad2af98}
+
+
+Definition at line 252 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{_jeu_8c_a52e4338b8a1c8e22017d66b9cad2af98_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a92a6f56229e6e3bf17c627b9702b853d}{\index{Jeu.\-c@{Jeu.\-c}!perso\-Prochehp@{perso\-Prochehp}}
+\index{perso\-Prochehp@{perso\-Prochehp}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{perso\-Prochehp}]{\setlength{\rightskip}{0pt plus 5cm}void perso\-Prochehp (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{p\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a92a6f56229e6e3bf17c627b9702b853d}
+
+
+Definition at line 240 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{_jeu_8c_a92a6f56229e6e3bf17c627b9702b853d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a0d10365670f81c1e95814816e88ddcbf}{\index{Jeu.\-c@{Jeu.\-c}!supprimer\-Element\-Tab\-Dyn@{supprimer\-Element\-Tab\-Dyn}}
+\index{supprimer\-Element\-Tab\-Dyn@{supprimer\-Element\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{supprimer\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a0d10365670f81c1e95814816e88ddcbf}
+
+
+supprimer\-Element\-Tab\-Dyn supprimme un element a la ieme position dans le tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em int} & position \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 435 of file Jeu.\-c.
+
+\hypertarget{_jeu_8c_a23c700cab62fac5e751c347b9248dc18}{\index{Jeu.\-c@{Jeu.\-c}!testament\-Tab\-Dyn@{testament\-Tab\-Dyn}}
+\index{testament\-Tab\-Dyn@{testament\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{testament\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void testament\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a23c700cab62fac5e751c347b9248dc18}
+
+
+testament\-Tab\-Dyn vide et libère un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 386 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_jeu_8c_a23c700cab62fac5e751c347b9248dc18_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8c_a8801ebbe316e3da8e164162fa410466c}{\index{Jeu.\-c@{Jeu.\-c}!valeur\-Ieme\-Element\-Tab\-Dyn@{valeur\-Ieme\-Element\-Tab\-Dyn}}
+\index{valeur\-Ieme\-Element\-Tab\-Dyn@{valeur\-Ieme\-Element\-Tab\-Dyn}!Jeu.c@{Jeu.\-c}}
+\subsubsection[{valeur\-Ieme\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element\-T\-D} valeur\-Ieme\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8c_a8801ebbe316e3da8e164162fa410466c}
+
+
+valeur\-Ieme\-Element\-Tab\-Dyn renvoie l'ieme element d'un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Tableau\-Dynamique $\ast$t \\
+\hline
+{\em unsigned} & int i \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 416 of file Jeu.\-c.
+

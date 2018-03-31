@@ -1,0 +1,5 @@
+<map id="initProjoRat" name="initProjoRat">
+<area shape="rect" id="node2" href="$_fromage_8c.html#a4577e7688f86fb847a8990b0b6ceaf68" title="donne la position en x du perso " alt="" coords="182,5,261,32"/>
+<area shape="rect" id="node3" href="$_fromage_8c.html#ab4d8527e7702c9b9a6828d4305581894" title="donne la position en y du perso " alt="" coords="182,56,261,83"/>
+<area shape="rect" id="node4" href="$_jeu_8c.html#a3389c806f79c54e7a4150967f604c7f7" title="ajouterElementTabDyn ajoute un element a la fin du tableau dynamique " alt="" coords="144,107,299,133"/>
+</map>

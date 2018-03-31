@@ -1,0 +1,25 @@
+var struct_fromage =
+[
+    [ "acc_x", "struct_fromage.html#ab3ac8e1dc34f396339f93c01d2782044", null ],
+    [ "acc_y", "struct_fromage.html#a781272f25ca67525c9902c98577122e3", null ],
+    [ "anim", "struct_fromage.html#a63c99fe1f6b99dd1d4a139352023459a", null ],
+    [ "anim_courante", "struct_fromage.html#a7a1d95344655c2e0df3ebbc6a282ae1f", null ],
+    [ "c_max_x", "struct_fromage.html#acc9793492dfac2fbf5259cf46e4d6067", null ],
+    [ "c_max_y", "struct_fromage.html#a6fc56c58b8aa8a676f9d3c473b35dbe0", null ],
+    [ "c_x", "struct_fromage.html#a4a1cf9110d6aeb65343be53dbfb5f5e9", null ],
+    [ "c_y", "struct_fromage.html#a948ae6c4d8e4618590ebc2c1b13d0451", null ],
+    [ "dest", "struct_fromage.html#a1d4c1bb15892e31b9af1f4fcf5d31fab", null ],
+    [ "direction", "struct_fromage.html#a886d551d5381dc3e53f17825ffc51641", null ],
+    [ "hauteur", "struct_fromage.html#a5e94a2f98c16e8b6860f95c99da1c0d3", null ],
+    [ "hp", "struct_fromage.html#a9aa790f93d2d067a4f5608fdb8409f94", null ],
+    [ "largeur", "struct_fromage.html#a74f0f2591e5f65bf792b2c3c67817d78", null ],
+    [ "orientation", "struct_fromage.html#a528d22a2a1651a4831eb643884a3c718", null ],
+    [ "posfrom", "struct_fromage.html#a0fcd2fb6981b924459a467441bf99419", null ],
+    [ "source", "struct_fromage.html#a4b36eb370ba51290847183a8da37db31", null ],
+    [ "temps_anim", "struct_fromage.html#a9f94aff026d82b8ba1067a997eb23102", null ],
+    [ "temps_anim_courante", "struct_fromage.html#af6c2caeb693a1e84b84beecae50891b4", null ],
+    [ "total_anims", "struct_fromage.html#a261ecb9a33ea9b7faaefeb6a4be47f5b", null ],
+    [ "vitesse", "struct_fromage.html#aef55e1775d611bfea0196692da1a0bc5", null ],
+    [ "x", "struct_fromage.html#ad0da36b2558901e21e7a30f6c227a45e", null ],
+    [ "y", "struct_fromage.html#aa4f0d3eebc3c443f9be81bf48561a217", null ]
+];

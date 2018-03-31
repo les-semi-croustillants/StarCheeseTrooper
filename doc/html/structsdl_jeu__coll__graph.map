@@ -1,0 +1,9 @@
+<map id="sdlJeu" name="sdlJeu">
+<area shape="rect" id="node2" href="$struct_jeu.html" title="Jeu" alt="" coords="172,309,214,336"/>
+<area shape="rect" id="node3" href="$struct_fantome.html" title="Module image. " alt="" coords="6,5,78,32"/>
+<area shape="rect" id="node8" href="$struct___salle.html" title="_Salle" alt="" coords="53,112,110,139"/>
+<area shape="rect" id="node4" href="$structs_tableau_dynamique.html" title="sTableauDynamique" alt="" coords="186,219,326,245"/>
+<area shape="rect" id="node5" href="$struct_projectile.html" title="Projectile" alt="" coords="238,112,313,139"/>
+<area shape="rect" id="node6" href="$struct_fromage.html" title="Fromage" alt="" coords="352,219,425,245"/>
+<area shape="rect" id="node7" href="$struct_terrain.html" title="Terrain" alt="" coords="99,219,161,245"/>
+</map>

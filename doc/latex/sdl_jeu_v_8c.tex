@@ -1,0 +1,224 @@
+\hypertarget{sdl_jeu_v_8c}{\section{/home/enzo/projet\-\_\-fluide/src/sdl\-Jeu\-V.c File Reference}
+\label{sdl_jeu_v_8c}\index{/home/enzo/projet\-\_\-fluide/src/sdl\-Jeu\-V.\-c@{/home/enzo/projet\-\_\-fluide/src/sdl\-Jeu\-V.\-c}}
+}
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}sdl\-Jeu.\-h\char`\"{}}\\*
+Include dependency graph for sdl\-Jeu\-V.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sdl_jeu_v_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_acd0f9b88c35112b35f67d3cde4b2365c}{H\-A\-U\-T}~0
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_af625d3f3bc022848a558f2b18def5b15}{D\-R\-O\-I\-T\-E}~1
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_abd7bcdd3b14eec4414469f88f2bd8f12}{B\-A\-S}~2
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_af07f8bf974fdf76afd17f2b97ac15a22}{G\-A\-U\-C\-H\-E}~3
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_a7dcae438e7824a23ed30d2139c1eff89}{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}~4
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_a4104d8bac5f71c40e72de6aa5080e853}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}~5
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_a17b219a9666ba50f527efe5fecf9de4c}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}~6
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_a0439327d50e1021a81cff4d7dce7ac12}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}~7
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}~8
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_a8712bf25a9d83bab5617b64747efb699}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G}~9
+\item 
+\#define \hyperlink{sdl_jeu_v_8c_a74905699f2c6affbd4d725cc62c5534d}{S\-H\-O\-O\-T}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{sdl_jeu_v_8c_aaf9c7736cab0f3cecd284f5fdb0b1683}{S\-D\-L\-\_\-load\-\_\-image} (const char $\ast$filename)
+\item 
+void \hyperlink{sdl_jeu_v_8c_a695e055ca801891bb79cc6f68ecbf2ae}{S\-D\-L\-\_\-apply\-\_\-surface} (S\-D\-L\-\_\-\-Surface $\ast$source, S\-D\-L\-\_\-\-Surface $\ast$destination, int x, int y)
+\item 
+void \hyperlink{sdl_jeu_v_8c_ae89d08c92730e6b1e20fabdccacd382b}{sdljeu\-Init} (\hyperlink{structsdl_jeu}{sdl\-Jeu} $\ast$p\-Sdl\-Jeu)
+\begin{DoxyCompactList}\small\item\em sdljeu\-Init charge les image les sons ect \end{DoxyCompactList}\item 
+void \hyperlink{sdl_jeu_v_8c_a8763c2205615637bad50d82915ce3123}{sdljeu\-Aff} (\hyperlink{structsdl_jeu}{sdl\-Jeu} $\ast$p\-Sdl\-Jeu)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{sdl_jeu_v_8c_a6c3723683dfe1e0731a0f01ebc2e84f9}{T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E} =32
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{sdl_jeu_v_8c_a7dcae438e7824a23ed30d2139c1eff89}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N~4}}\label{sdl_jeu_v_8c_a7dcae438e7824a23ed30d2139c1eff89}
+
+
+Definition at line 10 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_abd7bcdd3b14eec4414469f88f2bd8f12}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!B\-A\-S@{B\-A\-S}}
+\index{B\-A\-S@{B\-A\-S}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-A\-S~2}}\label{sdl_jeu_v_8c_abd7bcdd3b14eec4414469f88f2bd8f12}
+
+
+Definition at line 7 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_a0439327d50e1021a81cff4d7dce7ac12}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S~7}}\label{sdl_jeu_v_8c_a0439327d50e1021a81cff4d7dce7ac12}
+
+
+Definition at line 13 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_a8712bf25a9d83bab5617b64747efb699}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-I\-A\-G~9}}\label{sdl_jeu_v_8c_a8712bf25a9d83bab5617b64747efb699}
+
+
+Definition at line 15 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_a17b219a9666ba50f527efe5fecf9de4c}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E~6}}\label{sdl_jeu_v_8c_a17b219a9666ba50f527efe5fecf9de4c}
+
+
+Definition at line 12 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E~8}}\label{sdl_jeu_v_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}
+
+
+Definition at line 14 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_a4104d8bac5f71c40e72de6aa5080e853}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T~5}}\label{sdl_jeu_v_8c_a4104d8bac5f71c40e72de6aa5080e853}
+
+
+Definition at line 11 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_af625d3f3bc022848a558f2b18def5b15}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!D\-R\-O\-I\-T\-E@{D\-R\-O\-I\-T\-E}}
+\index{D\-R\-O\-I\-T\-E@{D\-R\-O\-I\-T\-E}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-O\-I\-T\-E~1}}\label{sdl_jeu_v_8c_af625d3f3bc022848a558f2b18def5b15}
+
+
+Definition at line 6 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_af07f8bf974fdf76afd17f2b97ac15a22}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!G\-A\-U\-C\-H\-E@{G\-A\-U\-C\-H\-E}}
+\index{G\-A\-U\-C\-H\-E@{G\-A\-U\-C\-H\-E}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-A\-U\-C\-H\-E~3}}\label{sdl_jeu_v_8c_af07f8bf974fdf76afd17f2b97ac15a22}
+
+
+Definition at line 8 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_acd0f9b88c35112b35f67d3cde4b2365c}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!H\-A\-U\-T@{H\-A\-U\-T}}
+\index{H\-A\-U\-T@{H\-A\-U\-T}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-A\-U\-T~0}}\label{sdl_jeu_v_8c_acd0f9b88c35112b35f67d3cde4b2365c}
+
+
+Definition at line 5 of file sdl\-Jeu\-V.\-c.
+
+\hypertarget{sdl_jeu_v_8c_a74905699f2c6affbd4d725cc62c5534d}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!S\-H\-O\-O\-T@{S\-H\-O\-O\-T}}
+\index{S\-H\-O\-O\-T@{S\-H\-O\-O\-T}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{S\-H\-O\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-H\-O\-O\-T~10}}\label{sdl_jeu_v_8c_a74905699f2c6affbd4d725cc62c5534d}
+
+
+Definition at line 16 of file sdl\-Jeu\-V.\-c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{sdl_jeu_v_8c_a695e055ca801891bb79cc6f68ecbf2ae}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!S\-D\-L\-\_\-apply\-\_\-surface@{S\-D\-L\-\_\-apply\-\_\-surface}}
+\index{S\-D\-L\-\_\-apply\-\_\-surface@{S\-D\-L\-\_\-apply\-\_\-surface}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{S\-D\-L\-\_\-apply\-\_\-surface}]{\setlength{\rightskip}{0pt plus 5cm}void S\-D\-L\-\_\-apply\-\_\-surface (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{source, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{destination, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{sdl_jeu_v_8c_a695e055ca801891bb79cc6f68ecbf2ae}
+\hypertarget{sdl_jeu_v_8c_aaf9c7736cab0f3cecd284f5fdb0b1683}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!S\-D\-L\-\_\-load\-\_\-image@{S\-D\-L\-\_\-load\-\_\-image}}
+\index{S\-D\-L\-\_\-load\-\_\-image@{S\-D\-L\-\_\-load\-\_\-image}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{S\-D\-L\-\_\-load\-\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface$\ast$ S\-D\-L\-\_\-load\-\_\-image (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{sdl_jeu_v_8c_aaf9c7736cab0f3cecd284f5fdb0b1683}
+
+
+Definition at line 6 of file menu.\-c.
+
+\hypertarget{sdl_jeu_v_8c_a8763c2205615637bad50d82915ce3123}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!sdljeu\-Aff@{sdljeu\-Aff}}
+\index{sdljeu\-Aff@{sdljeu\-Aff}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{sdljeu\-Aff}]{\setlength{\rightskip}{0pt plus 5cm}void sdljeu\-Aff (
+\begin{DoxyParamCaption}
+\item[{{\bf sdl\-Jeu} $\ast$}]{p\-Sdl\-Jeu}
+\end{DoxyParamCaption}
+)}}\label{sdl_jeu_v_8c_a8763c2205615637bad50d82915ce3123}
+
+
+Definition at line 124 of file sdl\-Jeu\-V.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{sdl_jeu_v_8c_a8763c2205615637bad50d82915ce3123_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{sdl_jeu_v_8c_ae89d08c92730e6b1e20fabdccacd382b}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!sdljeu\-Init@{sdljeu\-Init}}
+\index{sdljeu\-Init@{sdljeu\-Init}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{sdljeu\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void sdljeu\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf sdl\-Jeu} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{sdl_jeu_v_8c_ae89d08c92730e6b1e20fabdccacd382b}
+
+
+sdljeu\-Init charge les image les sons ect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sdl\-Jeu$\ast$} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file sdl\-Jeu\-V.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sdl_jeu_v_8c_ae89d08c92730e6b1e20fabdccacd382b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{sdl_jeu_v_8c_a6c3723683dfe1e0731a0f01ebc2e84f9}{\index{sdl\-Jeu\-V.\-c@{sdl\-Jeu\-V.\-c}!T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E@{T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E}}
+\index{T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E@{T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E}!sdlJeuV.c@{sdl\-Jeu\-V.\-c}}
+\subsubsection[{T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int T\-A\-I\-L\-L\-E\-\_\-\-S\-P\-R\-I\-T\-E =32}}\label{sdl_jeu_v_8c_a6c3723683dfe1e0731a0f01ebc2e84f9}
+
+
+Definition at line 18 of file sdl\-Jeu\-V.\-c.
+

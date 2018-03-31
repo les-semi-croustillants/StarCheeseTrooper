@@ -1,0 +1,7 @@
+<map id="jeuInit" name="jeuInit">
+<area shape="rect" id="node2" href="$_fromage_8c.html#a0ab0915ae62ade36bec9bba192c34614" title="Initialise les coordonnées de bases et autres variable de notre personnage. " alt="" coords="139,5,205,32"/>
+<area shape="rect" id="node3" href="$_terrain_8c.html#a44312d3c7ca6ef4573d206043149fc1f" title="terInit initialise le terrain " alt="" coords="145,56,199,83"/>
+<area shape="rect" id="node6" href="$_jeu_8c.html#a7518cb6d43b8202ba9a00bfe99fc3276" title="initialiserTabDyn initialise un tableau dynamique " alt="" coords="113,107,231,133"/>
+<area shape="rect" id="node4" href="$_terrain_8c.html#aa8121b2fc06d3aa777c8303f0f36317d" title="creerTabFich" alt="" coords="319,31,417,57"/>
+<area shape="rect" id="node5" href="$_terrain_8c.html#a5a60ae0eec54d0765a5c50a5e91181d5" title="terEstPosPersoValide regarde si la position d&#39;une entite est conforme au décors " alt="" coords="281,81,455,108"/>
+</map>

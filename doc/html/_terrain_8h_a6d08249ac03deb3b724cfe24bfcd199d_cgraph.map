@@ -1,0 +1,4 @@
+<map id="terInit" name="terInit">
+<area shape="rect" id="node2" href="$_terrain_8c.html#aa8121b2fc06d3aa777c8303f0f36317d" title="creerTabFich" alt="" coords="148,5,247,32"/>
+<area shape="rect" id="node3" href="$_terrain_8c.html#a5a60ae0eec54d0765a5c50a5e91181d5" title="terEstPosPersoValide regarde si la position d&#39;une entite est conforme au décors " alt="" coords="110,56,285,83"/>
+</map>

@@ -1,0 +1,463 @@
+\hypertarget{_fromage_8c}{\section{/home/enzo/projet\-\_\-fluide/src/\-Fromage.c File Reference}
+\label{_fromage_8c}\index{/home/enzo/projet\-\_\-fluide/src/\-Fromage.\-c@{/home/enzo/projet\-\_\-fluide/src/\-Fromage.\-c}}
+}
+{\ttfamily \#include \char`\"{}Fromage.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sdl\-Jeu.\-h\char`\"{}}\\*
+Include dependency graph for Fromage.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_fromage_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_fromage_8c_acd0f9b88c35112b35f67d3cde4b2365c}{H\-A\-U\-T}~0
+\item 
+\#define \hyperlink{_fromage_8c_af625d3f3bc022848a558f2b18def5b15}{D\-R\-O\-I\-T\-E}~p\-From-\/$>$vitesse
+\item 
+\#define \hyperlink{_fromage_8c_abd7bcdd3b14eec4414469f88f2bd8f12}{B\-A\-S}~2
+\item 
+\#define \hyperlink{_fromage_8c_af07f8bf974fdf76afd17f2b97ac15a22}{G\-A\-U\-C\-H\-E}~3
+\item 
+\#define \hyperlink{_fromage_8c_a7dcae438e7824a23ed30d2139c1eff89}{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}~4
+\item 
+\#define \hyperlink{_fromage_8c_a4104d8bac5f71c40e72de6aa5080e853}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}~5
+\item 
+\#define \hyperlink{_fromage_8c_a17b219a9666ba50f527efe5fecf9de4c}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}~6
+\item 
+\#define \hyperlink{_fromage_8c_a0439327d50e1021a81cff4d7dce7ac12}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}~7
+\item 
+\#define \hyperlink{_fromage_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}~8
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_fromage_8c_a0ab0915ae62ade36bec9bba192c34614}{from\-Init} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From)
+\begin{DoxyCompactList}\small\item\em Initialise les coordonnées de bases et autres variable de notre personnage. \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8c_a365ad04b0043379b598c870904130f83}{from\-Diag\-G\-B} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\item 
+void \hyperlink{_fromage_8c_afe3587533c99fc07fa05e4bd3b698e2d}{from\-Diag\-G\-H} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\item 
+void \hyperlink{_fromage_8c_a415d063435745d17fffbd85768a98745}{from\-Diag\-D\-B} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\item 
+void \hyperlink{_fromage_8c_a0421477017fd29fa3ec280a5ad3b8636}{from\-Diag\-D\-H} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\item 
+void \hyperlink{_fromage_8c_a1b01ae253751f07cae61840adada464c}{from\-Gauche} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\begin{DoxyCompactList}\small\item\em le personnage vas vers la gauche \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8c_a7a9d7a9f21a8a8416994073ea5b5d0db}{from\-Droite} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\begin{DoxyCompactList}\small\item\em le personnage vas vers la droite \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8c_a5863a40a7e9e51a065af35d0efeeb7ee}{from\-Haut} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\item 
+void \hyperlink{_fromage_8c_a7b6cb1da5e864487c3802d7698929165}{from\-Chute} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\item 
+void \hyperlink{_fromage_8c_a6b65f6ef20e9b627bf6c3ce5044bcb3a}{from\-Bas} (\hyperlink{struct_fromage}{Fromage} $\ast$p\-From, const \hyperlink{struct_terrain}{Terrain} $\ast$p\-Ter)
+\begin{DoxyCompactList}\small\item\em le personnage vas vers le bas \end{DoxyCompactList}\item 
+int \hyperlink{_fromage_8c_a4577e7688f86fb847a8990b0b6ceaf68}{from\-Get\-X} (const \hyperlink{struct_fromage}{Fromage} $\ast$p\-From)
+\begin{DoxyCompactList}\small\item\em donne la position en x du perso \end{DoxyCompactList}\item 
+int \hyperlink{_fromage_8c_ab4d8527e7702c9b9a6828d4305581894}{from\-Get\-Y} (const \hyperlink{struct_fromage}{Fromage} $\ast$p\-From)
+\begin{DoxyCompactList}\small\item\em donne la position en y du perso \end{DoxyCompactList}\item 
+int \hyperlink{_fromage_8c_ada12e1da3385503d6dfb4f2861dd5049}{from\-Gethp} (const \hyperlink{struct_fromage}{Fromage} $\ast$p\-From)
+\begin{DoxyCompactList}\small\item\em donne les point de vie du perso \end{DoxyCompactList}\item 
+void \hyperlink{_fromage_8c_a744f5a56a52afbd86c3318bd16ce63d4}{from\-Sethp} (int x, \hyperlink{struct_fromage}{Fromage} $\ast$p\-From)
+\begin{DoxyCompactList}\small\item\em change les point de vie du perso \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_fromage_8c_a7dcae438e7824a23ed30d2139c1eff89}{\index{Fromage.\-c@{Fromage.\-c}!A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N@{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-U\-C\-U\-N\-E\-\_\-\-D\-I\-R\-E\-C\-T\-I\-O\-N~4}}\label{_fromage_8c_a7dcae438e7824a23ed30d2139c1eff89}
+
+
+Definition at line 8 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_abd7bcdd3b14eec4414469f88f2bd8f12}{\index{Fromage.\-c@{Fromage.\-c}!B\-A\-S@{B\-A\-S}}
+\index{B\-A\-S@{B\-A\-S}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-A\-S~2}}\label{_fromage_8c_abd7bcdd3b14eec4414469f88f2bd8f12}
+
+
+Definition at line 5 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a0439327d50e1021a81cff4d7dce7ac12}{\index{Fromage.\-c@{Fromage.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-B\-A\-S~7}}\label{_fromage_8c_a0439327d50e1021a81cff4d7dce7ac12}
+
+
+Definition at line 11 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a17b219a9666ba50f527efe5fecf9de4c}{\index{Fromage.\-c@{Fromage.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-D\-R\-O\-I\-T\-E~6}}\label{_fromage_8c_a17b219a9666ba50f527efe5fecf9de4c}
+
+
+Definition at line 10 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}{\index{Fromage.\-c@{Fromage.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-G\-A\-U\-C\-H\-E~8}}\label{_fromage_8c_aab6eb63c11e2bab5f85e8488a3b30d5d}
+
+
+Definition at line 12 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a4104d8bac5f71c40e72de6aa5080e853}{\index{Fromage.\-c@{Fromage.\-c}!D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T@{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-U\-T~5}}\label{_fromage_8c_a4104d8bac5f71c40e72de6aa5080e853}
+
+
+Definition at line 9 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_af625d3f3bc022848a558f2b18def5b15}{\index{Fromage.\-c@{Fromage.\-c}!D\-R\-O\-I\-T\-E@{D\-R\-O\-I\-T\-E}}
+\index{D\-R\-O\-I\-T\-E@{D\-R\-O\-I\-T\-E}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{D\-R\-O\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-O\-I\-T\-E~p\-From-\/$>$vitesse}}\label{_fromage_8c_af625d3f3bc022848a558f2b18def5b15}
+
+
+Definition at line 4 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_af07f8bf974fdf76afd17f2b97ac15a22}{\index{Fromage.\-c@{Fromage.\-c}!G\-A\-U\-C\-H\-E@{G\-A\-U\-C\-H\-E}}
+\index{G\-A\-U\-C\-H\-E@{G\-A\-U\-C\-H\-E}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{G\-A\-U\-C\-H\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-A\-U\-C\-H\-E~3}}\label{_fromage_8c_af07f8bf974fdf76afd17f2b97ac15a22}
+
+
+Definition at line 6 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_acd0f9b88c35112b35f67d3cde4b2365c}{\index{Fromage.\-c@{Fromage.\-c}!H\-A\-U\-T@{H\-A\-U\-T}}
+\index{H\-A\-U\-T@{H\-A\-U\-T}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{H\-A\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-A\-U\-T~0}}\label{_fromage_8c_acd0f9b88c35112b35f67d3cde4b2365c}
+
+
+Definition at line 3 of file Fromage.\-c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_fromage_8c_a6b65f6ef20e9b627bf6c3ce5044bcb3a}{\index{Fromage.\-c@{Fromage.\-c}!from\-Bas@{from\-Bas}}
+\index{from\-Bas@{from\-Bas}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Bas}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Bas (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{, }
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a6b65f6ef20e9b627bf6c3ce5044bcb3a}
+
+
+le personnage vas vers le bas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+{\em const} & \hyperlink{struct_terrain}{Terrain} $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_fromage_8c_a6b65f6ef20e9b627bf6c3ce5044bcb3a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_a7b6cb1da5e864487c3802d7698929165}{\index{Fromage.\-c@{Fromage.\-c}!from\-Chute@{from\-Chute}}
+\index{from\-Chute@{from\-Chute}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Chute}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Chute (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{p\-From, }
+\item[{const {\bf Terrain} $\ast$}]{p\-Ter}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a7b6cb1da5e864487c3802d7698929165}
+
+
+Definition at line 99 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a415d063435745d17fffbd85768a98745}{\index{Fromage.\-c@{Fromage.\-c}!from\-Diag\-D\-B@{from\-Diag\-D\-B}}
+\index{from\-Diag\-D\-B@{from\-Diag\-D\-B}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Diag\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Diag\-D\-B (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{p\-From, }
+\item[{const {\bf Terrain} $\ast$}]{p\-Ter}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a415d063435745d17fffbd85768a98745}
+
+
+Definition at line 54 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_fromage_8c_a415d063435745d17fffbd85768a98745_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_a0421477017fd29fa3ec280a5ad3b8636}{\index{Fromage.\-c@{Fromage.\-c}!from\-Diag\-D\-H@{from\-Diag\-D\-H}}
+\index{from\-Diag\-D\-H@{from\-Diag\-D\-H}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Diag\-D\-H}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Diag\-D\-H (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{p\-From, }
+\item[{const {\bf Terrain} $\ast$}]{p\-Ter}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a0421477017fd29fa3ec280a5ad3b8636}
+
+
+Definition at line 63 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_fromage_8c_a0421477017fd29fa3ec280a5ad3b8636_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_a365ad04b0043379b598c870904130f83}{\index{Fromage.\-c@{Fromage.\-c}!from\-Diag\-G\-B@{from\-Diag\-G\-B}}
+\index{from\-Diag\-G\-B@{from\-Diag\-G\-B}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Diag\-G\-B}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Diag\-G\-B (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{p\-From, }
+\item[{const {\bf Terrain} $\ast$}]{p\-Ter}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a365ad04b0043379b598c870904130f83}
+
+
+Definition at line 36 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_fromage_8c_a365ad04b0043379b598c870904130f83_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_afe3587533c99fc07fa05e4bd3b698e2d}{\index{Fromage.\-c@{Fromage.\-c}!from\-Diag\-G\-H@{from\-Diag\-G\-H}}
+\index{from\-Diag\-G\-H@{from\-Diag\-G\-H}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Diag\-G\-H}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Diag\-G\-H (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{p\-From, }
+\item[{const {\bf Terrain} $\ast$}]{p\-Ter}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_afe3587533c99fc07fa05e4bd3b698e2d}
+
+
+Definition at line 45 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_fromage_8c_afe3587533c99fc07fa05e4bd3b698e2d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_a7a9d7a9f21a8a8416994073ea5b5d0db}{\index{Fromage.\-c@{Fromage.\-c}!from\-Droite@{from\-Droite}}
+\index{from\-Droite@{from\-Droite}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Droite}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Droite (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{, }
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a7a9d7a9f21a8a8416994073ea5b5d0db}
+
+
+le personnage vas vers la droite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+{\em const} & \hyperlink{struct_terrain}{Terrain} $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_fromage_8c_a7a9d7a9f21a8a8416994073ea5b5d0db_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_a1b01ae253751f07cae61840adada464c}{\index{Fromage.\-c@{Fromage.\-c}!from\-Gauche@{from\-Gauche}}
+\index{from\-Gauche@{from\-Gauche}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Gauche}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Gauche (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{, }
+\item[{const {\bf Terrain} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a1b01ae253751f07cae61840adada464c}
+
+
+le personnage vas vers la gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+{\em const} & \hyperlink{struct_terrain}{Terrain} $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{_fromage_8c_a1b01ae253751f07cae61840adada464c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_ada12e1da3385503d6dfb4f2861dd5049}{\index{Fromage.\-c@{Fromage.\-c}!from\-Gethp@{from\-Gethp}}
+\index{from\-Gethp@{from\-Gethp}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Gethp}]{\setlength{\rightskip}{0pt plus 5cm}int from\-Gethp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_ada12e1da3385503d6dfb4f2861dd5049}
+
+
+donne les point de vie du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a4577e7688f86fb847a8990b0b6ceaf68}{\index{Fromage.\-c@{Fromage.\-c}!from\-Get\-X@{from\-Get\-X}}
+\index{from\-Get\-X@{from\-Get\-X}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int from\-Get\-X (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a4577e7688f86fb847a8990b0b6ceaf68}
+
+
+donne la position en x du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_ab4d8527e7702c9b9a6828d4305581894}{\index{Fromage.\-c@{Fromage.\-c}!from\-Get\-Y@{from\-Get\-Y}}
+\index{from\-Get\-Y@{from\-Get\-Y}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int from\-Get\-Y (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_ab4d8527e7702c9b9a6828d4305581894}
+
+
+donne la position en y du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a5863a40a7e9e51a065af35d0efeeb7ee}{\index{Fromage.\-c@{Fromage.\-c}!from\-Haut@{from\-Haut}}
+\index{from\-Haut@{from\-Haut}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Haut}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Haut (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{p\-From, }
+\item[{const {\bf Terrain} $\ast$}]{p\-Ter}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a5863a40a7e9e51a065af35d0efeeb7ee}
+
+
+Definition at line 92 of file Fromage.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{_fromage_8c_a5863a40a7e9e51a065af35d0efeeb7ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_fromage_8c_a0ab0915ae62ade36bec9bba192c34614}{\index{Fromage.\-c@{Fromage.\-c}!from\-Init@{from\-Init}}
+\index{from\-Init@{from\-Init}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a0ab0915ae62ade36bec9bba192c34614}
+
+
+Initialise les coordonnées de bases et autres variable de notre personnage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Fromage.\-c.
+
+\hypertarget{_fromage_8c_a744f5a56a52afbd86c3318bd16ce63d4}{\index{Fromage.\-c@{Fromage.\-c}!from\-Sethp@{from\-Sethp}}
+\index{from\-Sethp@{from\-Sethp}!Fromage.c@{Fromage.\-c}}
+\subsubsection[{from\-Sethp}]{\setlength{\rightskip}{0pt plus 5cm}void from\-Sethp (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf Fromage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_fromage_8c_a744f5a56a52afbd86c3318bd16ce63d4}
+
+
+change les point de vie du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_fromage}{Fromage}} & $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Fromage.\-c.
+

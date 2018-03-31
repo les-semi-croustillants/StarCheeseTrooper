@@ -1,0 +1,410 @@
+\hypertarget{_jeu_8h}{\section{/home/enzo/projet\-\_\-fluide/src/\-Jeu.h File Reference}
+\label{_jeu_8h}\index{/home/enzo/projet\-\_\-fluide/src/\-Jeu.\-h@{/home/enzo/projet\-\_\-fluide/src/\-Jeu.\-h}}
+}
+{\ttfamily \#include \char`\"{}Fromage.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Terrain.\-h\char`\"{}}\\*
+Include dependency graph for Jeu.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_jeu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_jeu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_projectile}{Projectile}
+\item 
+struct \hyperlink{structs_tableau_dynamique}{s\-Tableau\-Dynamique}
+\item 
+struct \hyperlink{struct_jeu}{Jeu}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{struct_projectile}{Projectile} \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D}
+\item 
+typedef struct \hyperlink{structs_tableau_dynamique}{s\-Tableau\-Dynamique} \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_jeu_8h_a3e31ce457d0c1a4c9723a4b699d48a84}{init\-Projo} (\hyperlink{struct_jeu}{Jeu} $\ast$)
+\begin{DoxyCompactList}\small\item\em init\-Projo initialise un nouveau projectile en fonction de l'orientation du personnage \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_ae7000fd1b75f52155d56828cb6b10989}{deplacer\-Projo} (\hyperlink{struct_jeu}{Jeu} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em deplacer\-Projo deplace le projectile \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_a7518cb6d43b8202ba9a00bfe99fc3276}{initialiser\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em initialiser\-Tab\-Dyn initialise un tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_a23c700cab62fac5e751c347b9248dc18}{testament\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em testament\-Tab\-Dyn vide et libère un tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_ae62c34e693110e9e5a159769505059b1}{affecter\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t1, const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t2)
+\begin{DoxyCompactList}\small\item\em affecter\-Tab\-Dyn affecte un tableau dynamique dans un nouveau tableau dynamique \end{DoxyCompactList}\item 
+unsigned int \hyperlink{_jeu_8h_a88c6d8f56e71ed8e6d7196cd74f40cb6}{taille\-Utilisee\-Tab\-Dyn} (const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em taille\-Utilisee\-Tab\-Dyn renvoie la taille utilisée par un tableau dynamique \end{DoxyCompactList}\item 
+\hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} \hyperlink{_jeu_8h_a8801ebbe316e3da8e164162fa410466c}{valeur\-Ieme\-Element\-Tab\-Dyn} (const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, unsigned int i)
+\begin{DoxyCompactList}\small\item\em valeur\-Ieme\-Element\-Tab\-Dyn renvoie l'ieme element d'un tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_afd5a3bf829dfce68d6ee92c86bfe4a3c}{afficher\-Tab\-Dyn} (const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em afficher\-Tab\-Dyn affiche les elements du tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_a3389c806f79c54e7a4150967f604c7f7}{ajouter\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e)
+\begin{DoxyCompactList}\small\item\em ajouter\-Element\-Tab\-Dyn ajoute un element a la fin du tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_a0d10365670f81c1e95814816e88ddcbf}{supprimer\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, int position)
+\begin{DoxyCompactList}\small\item\em supprimer\-Element\-Tab\-Dyn supprimme un element a la ieme position dans le tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_af54396488f24cbc0ea4c772b0a833be7}{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e, unsigned int i)
+\begin{DoxyCompactList}\small\item\em modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn modifie l'ieme element du tableau dynamique par celui passer en parametre \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_a8032aaa63ec6b2231f3ac50a5da6eddb}{inserer\-Element\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e, unsigned int i)
+\begin{DoxyCompactList}\small\item\em inserer\-Element\-Tab\-Dyn insere l'element passer en parametre a la ieme place du tableau dynamique \end{DoxyCompactList}\item 
+void \hyperlink{_jeu_8h_aaa7f56dc206507579b5140e05cd278a2}{trier\-Tab\-Dyn} (\hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t)
+\begin{DoxyCompactList}\small\item\em trier\-Tab\-Dyn trie un tableau dynamique \end{DoxyCompactList}\item 
+int \hyperlink{_jeu_8h_a708b88c428cdc2cfe963934ebcca3132}{rechercher\-Element\-Tab\-Dyn} (const \hyperlink{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{Tableau\-Dynamique} $\ast$t, \hyperlink{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{Element\-T\-D} e)
+\begin{DoxyCompactList}\small\item\em rechercher\-Element\-Tab\-Dyn cherche et renvoie l'element passer en parametre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}{\index{Jeu.\-h@{Jeu.\-h}!Element\-T\-D@{Element\-T\-D}}
+\index{Element\-T\-D@{Element\-T\-D}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{Element\-T\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Projectile} {\bf Element\-T\-D}}}\label{_jeu_8h_a19f385bd48e6eaff3c61e8abf073263e}
+
+
+Definition at line 11 of file Jeu.\-h.
+
+\hypertarget{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}{\index{Jeu.\-h@{Jeu.\-h}!Tableau\-Dynamique@{Tableau\-Dynamique}}
+\index{Tableau\-Dynamique@{Tableau\-Dynamique}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{Tableau\-Dynamique}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s\-Tableau\-Dynamique} {\bf Tableau\-Dynamique}}}\label{_jeu_8h_a8248fdbab1c5aa4232c53c2f209f989a}
+
+
+Definition at line 19 of file Jeu.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_jeu_8h_ae62c34e693110e9e5a159769505059b1}{\index{Jeu.\-h@{Jeu.\-h}!affecter\-Tab\-Dyn@{affecter\-Tab\-Dyn}}
+\index{affecter\-Tab\-Dyn@{affecter\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{affecter\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void affecter\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t1, }
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t2}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_ae62c34e693110e9e5a159769505059b1}
+
+
+affecter\-Tab\-Dyn affecte un tableau dynamique dans un nouveau tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t1 \\
+\hline
+{\em const} & Tableau\-Dynamique $\ast$t2 \\
+\hline
+\end{DoxyParams}
+\hypertarget{_jeu_8h_afd5a3bf829dfce68d6ee92c86bfe4a3c}{\index{Jeu.\-h@{Jeu.\-h}!afficher\-Tab\-Dyn@{afficher\-Tab\-Dyn}}
+\index{afficher\-Tab\-Dyn@{afficher\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{afficher\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_afd5a3bf829dfce68d6ee92c86bfe4a3c}
+
+
+afficher\-Tab\-Dyn affiche les elements du tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Tableau\-Dynamique $\ast$t \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 423 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_jeu_8h_afd5a3bf829dfce68d6ee92c86bfe4a3c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8h_a3389c806f79c54e7a4150967f604c7f7}{\index{Jeu.\-h@{Jeu.\-h}!ajouter\-Element\-Tab\-Dyn@{ajouter\-Element\-Tab\-Dyn}}
+\index{ajouter\-Element\-Tab\-Dyn@{ajouter\-Element\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{ajouter\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void ajouter\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{{\bf Element\-T\-D}}]{e}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a3389c806f79c54e7a4150967f604c7f7}
+
+
+ajouter\-Element\-Tab\-Dyn ajoute un element a la fin du tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em Element\-T\-D} & e \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 396 of file Jeu.\-c.
+
+\hypertarget{_jeu_8h_ae7000fd1b75f52155d56828cb6b10989}{\index{Jeu.\-h@{Jeu.\-h}!deplacer\-Projo@{deplacer\-Projo}}
+\index{deplacer\-Projo@{deplacer\-Projo}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{deplacer\-Projo}]{\setlength{\rightskip}{0pt plus 5cm}void deplacer\-Projo (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_ae7000fd1b75f52155d56828cb6b10989}
+
+
+deplacer\-Projo deplace le projectile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Jeu$\ast$} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file Jeu.\-c.
+
+\hypertarget{_jeu_8h_a7518cb6d43b8202ba9a00bfe99fc3276}{\index{Jeu.\-h@{Jeu.\-h}!initialiser\-Tab\-Dyn@{initialiser\-Tab\-Dyn}}
+\index{initialiser\-Tab\-Dyn@{initialiser\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{initialiser\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a7518cb6d43b8202ba9a00bfe99fc3276}
+
+
+initialiser\-Tab\-Dyn initialise un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$ t \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 379 of file Jeu.\-c.
+
+\hypertarget{_jeu_8h_a3e31ce457d0c1a4c9723a4b699d48a84}{\index{Jeu.\-h@{Jeu.\-h}!init\-Projo@{init\-Projo}}
+\index{init\-Projo@{init\-Projo}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{init\-Projo}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Projo (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a3e31ce457d0c1a4c9723a4b699d48a84}
+
+
+init\-Projo initialise un nouveau projectile en fonction de l'orientation du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Jeu$\ast$} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{_jeu_8h_a3e31ce457d0c1a4c9723a4b699d48a84_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8h_a8032aaa63ec6b2231f3ac50a5da6eddb}{\index{Jeu.\-h@{Jeu.\-h}!inserer\-Element\-Tab\-Dyn@{inserer\-Element\-Tab\-Dyn}}
+\index{inserer\-Element\-Tab\-Dyn@{inserer\-Element\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{inserer\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void inserer\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{{\bf Element\-T\-D}}]{e, }
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a8032aaa63ec6b2231f3ac50a5da6eddb}
+
+
+inserer\-Element\-Tab\-Dyn insere l'element passer en parametre a la ieme place du tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em Element\-T\-D} & e \\
+\hline
+{\em unsigned} & int i \\
+\hline
+\end{DoxyParams}
+\hypertarget{_jeu_8h_af54396488f24cbc0ea4c772b0a833be7}{\index{Jeu.\-h@{Jeu.\-h}!modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn@{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn}}
+\index{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn@{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{{\bf Element\-T\-D}}]{e, }
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_af54396488f24cbc0ea4c772b0a833be7}
+
+
+modifier\-Valeur\-Ieme\-Element\-Tab\-Dyn modifie l'ieme element du tableau dynamique par celui passer en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em Element\-T\-D} & e \\
+\hline
+{\em unsigned} & int i \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 464 of file Jeu.\-c.
+
+\hypertarget{_jeu_8h_a708b88c428cdc2cfe963934ebcca3132}{\index{Jeu.\-h@{Jeu.\-h}!rechercher\-Element\-Tab\-Dyn@{rechercher\-Element\-Tab\-Dyn}}
+\index{rechercher\-Element\-Tab\-Dyn@{rechercher\-Element\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{rechercher\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}int rechercher\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{{\bf Element\-T\-D}}]{e}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a708b88c428cdc2cfe963934ebcca3132}
+
+
+rechercher\-Element\-Tab\-Dyn cherche et renvoie l'element passer en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Tableau\-Dynamique $\ast$t \\
+\hline
+{\em Element\-T\-D} & e \\
+\hline
+\end{DoxyParams}
+\hypertarget{_jeu_8h_a0d10365670f81c1e95814816e88ddcbf}{\index{Jeu.\-h@{Jeu.\-h}!supprimer\-Element\-Tab\-Dyn@{supprimer\-Element\-Tab\-Dyn}}
+\index{supprimer\-Element\-Tab\-Dyn@{supprimer\-Element\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{supprimer\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void supprimer\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a0d10365670f81c1e95814816e88ddcbf}
+
+
+supprimer\-Element\-Tab\-Dyn supprimme un element a la ieme position dans le tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+{\em int} & position \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 435 of file Jeu.\-c.
+
+\hypertarget{_jeu_8h_a88c6d8f56e71ed8e6d7196cd74f40cb6}{\index{Jeu.\-h@{Jeu.\-h}!taille\-Utilisee\-Tab\-Dyn@{taille\-Utilisee\-Tab\-Dyn}}
+\index{taille\-Utilisee\-Tab\-Dyn@{taille\-Utilisee\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{taille\-Utilisee\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int taille\-Utilisee\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a88c6d8f56e71ed8e6d7196cd74f40cb6}
+
+
+taille\-Utilisee\-Tab\-Dyn renvoie la taille utilisée par un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Tableau\-Dynamique $\ast$t \\
+\hline
+\end{DoxyParams}
+\hypertarget{_jeu_8h_a23c700cab62fac5e751c347b9248dc18}{\index{Jeu.\-h@{Jeu.\-h}!testament\-Tab\-Dyn@{testament\-Tab\-Dyn}}
+\index{testament\-Tab\-Dyn@{testament\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{testament\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void testament\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a23c700cab62fac5e751c347b9248dc18}
+
+
+testament\-Tab\-Dyn vide et libère un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 386 of file Jeu.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_jeu_8h_a23c700cab62fac5e751c347b9248dc18_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_jeu_8h_aaa7f56dc206507579b5140e05cd278a2}{\index{Jeu.\-h@{Jeu.\-h}!trier\-Tab\-Dyn@{trier\-Tab\-Dyn}}
+\index{trier\-Tab\-Dyn@{trier\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{trier\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}void trier\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{{\bf Tableau\-Dynamique} $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_aaa7f56dc206507579b5140e05cd278a2}
+
+
+trier\-Tab\-Dyn trie un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tableau\-Dynamique} & $\ast$t \\
+\hline
+\end{DoxyParams}
+\hypertarget{_jeu_8h_a8801ebbe316e3da8e164162fa410466c}{\index{Jeu.\-h@{Jeu.\-h}!valeur\-Ieme\-Element\-Tab\-Dyn@{valeur\-Ieme\-Element\-Tab\-Dyn}}
+\index{valeur\-Ieme\-Element\-Tab\-Dyn@{valeur\-Ieme\-Element\-Tab\-Dyn}!Jeu.h@{Jeu.\-h}}
+\subsubsection[{valeur\-Ieme\-Element\-Tab\-Dyn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element\-T\-D} valeur\-Ieme\-Element\-Tab\-Dyn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tableau\-Dynamique} $\ast$}]{t, }
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_jeu_8h_a8801ebbe316e3da8e164162fa410466c}
+
+
+valeur\-Ieme\-Element\-Tab\-Dyn renvoie l'ieme element d'un tableau dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Tableau\-Dynamique $\ast$t \\
+\hline
+{\em unsigned} & int i \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 416 of file Jeu.\-c.
+

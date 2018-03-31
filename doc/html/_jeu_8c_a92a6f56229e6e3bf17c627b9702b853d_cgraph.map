@@ -1,0 +1,5 @@
+<map id="persoProchehp" name="persoProchehp">
+<area shape="rect" id="node2" href="$_fromage_8c.html#a744f5a56a52afbd86c3318bd16ce63d4" title="change les point de vie du perso " alt="" coords="208,5,291,32"/>
+<area shape="rect" id="node3" href="$_fromage_8c.html#ada12e1da3385503d6dfb4f2861dd5049" title="donne les point de vie du perso " alt="" coords="208,56,291,83"/>
+<area shape="rect" id="node4" href="$_jeu_8c.html#a0d10365670f81c1e95814816e88ddcbf" title="supprimerElementTabDyn supprimme un element a la ieme position dans le tableau dynamique ..." alt="" coords="163,107,336,133"/>
+</map>

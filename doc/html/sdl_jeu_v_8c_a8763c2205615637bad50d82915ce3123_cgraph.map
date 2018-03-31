@@ -1,0 +1,7 @@
+<map id="sdljeuAff" name="sdljeuAff">
+<area shape="rect" id="node2" href="$_jeu_8c.html#a2cbfcfb9733316dbc407c8a421285447" title="jeuGetConstTerrainPtr" alt="" coords="128,5,280,32"/>
+<area shape="rect" id="node3" href="$_terrain_8c.html#a894e796af5dd61fa8e8879d74c4c197b" title="donne la taille du terrain " alt="" coords="167,56,241,83"/>
+<area shape="rect" id="node4" href="$_terrain_8c.html#af3b892a93ee78d81a03111d8b00231fe" title="donne la taille du terrain " alt="" coords="167,107,241,133"/>
+<area shape="rect" id="node5" href="$_terrain_8c.html#a43e155974fd55979d4eca34f5025bb43" title="donne le contenu de la case xy " alt="" coords="166,157,242,184"/>
+<area shape="rect" id="node6" href="$sdl_jeu_v_8c.html#a695e055ca801891bb79cc6f68ecbf2ae" title="SDL_apply_surface" alt="" coords="136,208,272,235"/>
+</map>
